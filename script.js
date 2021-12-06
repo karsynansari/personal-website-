@@ -1,3 +1,7 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
-document.querySelector("body").appendChild(h2);
+const openContent = document.querySelectorAll("[display-content]");
+
+openContent.forEach((button) => {
+  button.addEventListener("click", () => {
+    window.confirm("Look at me! I'm learning JavaScript!");
+  });
+});
